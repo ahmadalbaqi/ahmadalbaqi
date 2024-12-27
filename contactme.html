@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ahmad Albaqi</title>
+        <link rel="stylesheet" href="style.css">
+    </head>  
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#111"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="shortcut.html">SHORTCUT</a></li>
+                <li><a href="contactme.html">CONTACT ME</a></li>       
+            </ul>
+            <ul>
+                <li class="home"><a href="index.html">Ahmad Albaqi</a></li>
+                <li class="hideOnMobile"><a href="aboutme.html">ABOUT ME</a></li>
+                <li class="hideOnMobile"><a href="shortcut.html">SHORTCUT</a></li>
+                <li class="hideOnMobile"><a href="contactme.html">CONTACT ME</a></li>
+                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="100 -960 960 960" width="24px" fill="#111"><path d="M120-240v-80h720v80h220Zm0-200v-80h720v80h220Zm0-200v-80h720v80h220Z"/></svg></a>    
+            </ul>
+        </nav>
+        <div class="container-content-contactme">
+            <a href="https://wa.me/6285852441552"
+            class="a-content-contactme">
+                <img src="WhatsApp.webp" class="img-content-contactme">
+                <p>Hubungi Saya Di WhatsApp</p>
+            </a>
+            <a href="https://www.instagram.com/ahmadalbaqii"
+            class="a-content-contactme">
+                <img src="Instagram.webp" class="img-content-contactme">
+                <p>Hubungi Saya Di Instagram</p>
+            </a>
+            <a href="https://www.tiktok.com/@shidou_okura"
+            class="a-content-contactme">
+                <img src="Tiktok.png" class="img-content-contactme">
+                <p>Hubungi Saya Di Tiktok</p>
+            </a>
+        </div>
+        <h3 class="footer">&copy; 2024 Ahmad Albaqi. All Rights Reserved.</h3>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar') 
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    </body>  
+</html>
